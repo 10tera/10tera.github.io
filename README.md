@@ -1,1 +1,1 @@
-# sosupe.github.io
+# 10tera.github.io
