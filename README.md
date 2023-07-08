@@ -1,1 +1,0 @@
-# 10tera.github.io
