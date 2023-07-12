@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          <ScrollButton buttonText={"About"}/>
+          <ScrollButton buttonText={"About"} onClick={() => console.log("clicked")}/>
           <h1>test title</h1>
         </div>
       </main>
