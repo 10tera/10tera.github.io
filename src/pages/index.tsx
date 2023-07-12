@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import ScrollButton from "@/components/ScrollButton/ScrollButton";
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          <ScrollButton buttonText={"About"} onClick={() => console.log("clicked")}/>
+          <ScrollButton buttonText={"About"} onClick={() => console.log("clicked")} />
           <h1>test title</h1>
         </div>
       </main>

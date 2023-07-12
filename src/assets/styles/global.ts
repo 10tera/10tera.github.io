@@ -1,16 +1,16 @@
-import {Inter} from "next/font/google";
-import {GlobalProps} from "@emotion/react";
+import { Inter } from "next/font/google";
+import Emotion from "@emotion/react";
 
 const inter = Inter({
-    subsets: ["latin"],
-    weight: "400"
+  subsets: ["latin"],
+  weight: "400",
 });
 
-const globalStyle: GlobalProps["styles"] = {
-    ...inter.style,
-    backgroundColor: "#242529"
+const globalStyle: Emotion.GlobalProps["styles"] = {
+  ...inter.style,
+  backgroundColor: "#242529",
 };
 
-export const style: GlobalProps["styles"] = {
-    body: globalStyle
+export const style: Emotion.GlobalProps["styles"] = {
+  body: globalStyle,
 };

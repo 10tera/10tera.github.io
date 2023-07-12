@@ -12,6 +12,7 @@
     //"linebreak-style": ["error", "windows"],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["GlobalProps", "css"] }]
   }
 }
