@@ -1,13 +1,13 @@
 pre-commit:
   parallel: true
-    commands:
-      check:
-        glob: "*.{js,ts,jsx,tsx,astro}"
-        run: | 
-          pnpm eslint
-          pnpm prettier --check .
+  commands:
+    check:
+      glob: "*.{js,ts,jsx,tsx,astro}"
+      run: |
+        pnpm eslint
+        pnpm prettier --check .
 
 commit-msg:
   commands:
     commitlint:
-      run: pnpm --no -- commitlint --edit "$1"
+      run: pnpm --no -- commitlint --edit .git/COMMIT_EDITMSG
