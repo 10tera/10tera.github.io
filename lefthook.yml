@@ -1,11 +1,12 @@
 pre-commit:
   parallel: true
   commands:
-    check:
+    eslint:
       glob: "*.{js,ts,jsx,tsx,astro}"
-      run: |
-        pnpm eslint
-        pnpm prettier --check .
+      run: pnpm check:eslint
+    prettier:
+      glob: "*.{js,ts,jsx,tsx,astro}"
+      run: pnpm check:prettier
 
 commit-msg:
   commands:
