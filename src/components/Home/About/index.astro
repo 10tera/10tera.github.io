@@ -1,0 +1,25 @@
+---
+import Career from "@/components/Home/About/Carrer/index.astro";
+import Research from "@/components/Home/About/Research/index.astro";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+---
+
+<div class="flex w-full flex-col items-center gap-14" id="about">
+  <h2 class="text-center text-4xl font-bold text-secondary-foreground">
+    About
+  </h2>
+  <Card className="w-full max-w-[600px]">
+    <CardHeader>
+      <CardTitle>Who am I ?</CardTitle>
+    </CardHeader>
+    <CardContent>
+      Tanimura Yuto<br />
+      ハンドルネームは10teraです。由来は10TB(10x10^12)です。<br />
+      高専で工学系を学んだのにもかかわらず、プログラミングの道に進んでいます。<br
+      />
+      好きなものは宇宙/海です。
+    </CardContent>
+  </Card>
+  <Career />
+  <Research />
+</div>

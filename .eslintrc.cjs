@@ -17,7 +17,7 @@ const config = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: "tsconfig.json",
+    project: "./tsconfig.json",
   },
   plugins: ["@typescript-eslint", "tailwindcss", "unused-imports"],
   ignorePatterns: ["node_modules", "dist"],
@@ -28,6 +28,7 @@ const config = {
       parserOptions: {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
+        project: "./tsconfig.json",
       },
       rules: {
         // Any型の使用を禁止
