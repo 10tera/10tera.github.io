@@ -1,0 +1,23 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header/index.astro";
+import Links from "@/components/Home/Links/index.astro";
+import About from "@/components/Home/About/index.astro";
+import Skills from "@/components/Home/Skills/index.astro";
+import Works from "@/components/Home/Works/index.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Header />
+  <main
+    class="flex min-h-dvh flex-col items-center gap-24 bg-background px-12 py-16"
+  >
+    <h1 class="text-center text-5xl font-bold text-secondary-foreground">
+      Hello. I'm <span class="text-primary">10tera</span>
+    </h1>
+    <Links />
+    <About />
+    <Skills />
+    <Works />
+  </main>
+</Layout>

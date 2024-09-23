@@ -1,0 +1,26 @@
+---
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { LibraryIcon } from "lucide-react";
+---
+
+<Card className="w-full max-w-[600px]">
+  <CardHeader>
+    <CardTitle>My Research</CardTitle>
+  </CardHeader>
+  <CardContent className="flex flex-col gap-4">
+    <div class="flex gap-4">
+      <div class="flex flex-col items-center">
+        <LibraryIcon size={32} />
+        <div class="h-full w-px bg-gray-300 dark:bg-gray-600"></div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <p>2024/02</p>
+        <h4>
+          Real-time cost updates and route optimization for routing algorithms
+          using preprocessing
+        </h4>
+        <p>National Institute of Technology Gifu College</p>
+      </div>
+    </div>
+  </CardContent>
+</Card>

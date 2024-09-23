@@ -1,0 +1,21 @@
+---
+import { Anchor } from "../ui/anchor";
+import { Satellite } from "lucide-react";
+---
+
+<header class="flex h-fit w-full justify-between bg-background px-10 py-4">
+  <a href="/">
+    <div class="flex items-center gap-2">
+      <Satellite size={28} />
+      <span class="text-2xl text-secondary-foreground"
+        ><span class="text-primary">10tera's</span> Portfolio</span
+      >
+    </div>
+  </a>
+  <div class="flex flex-wrap justify-end gap-4">
+    <Anchor variant="outline" href="#links">Links</Anchor>
+    <Anchor variant="outline" href="#about">About</Anchor>
+    <Anchor variant="outline" href="#skills">Skills</Anchor>
+    <Anchor variant="outline" href="#works">Works</Anchor>
+  </div>
+</header>
